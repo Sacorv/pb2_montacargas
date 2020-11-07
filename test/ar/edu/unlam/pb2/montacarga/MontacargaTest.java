@@ -6,6 +6,15 @@ import org.junit.Test;
 
 public class MontacargaTest {
 
+	@Test 
+	public void queSePuedaCrearUnMontacargasVacio() {
+		Montacargas montacargas = new Montacargas(20);
+		Integer cargaObtenida = montacargas.obtenerCarga();
+		Integer valorEsperado = 0;
+		
+		assertEquals(valorEsperado, cargaObtenida);
+	}
+	
 	@Test
 	public void queSePuedaCargarElMontacargas() {
 		Montacargas montacargas = new Montacargas(10);
