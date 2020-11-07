@@ -36,6 +36,15 @@ public class MontacargaTest {
 	}
 	
 	@Test 
+	public void queNoSePuedaCargarSiSuperaElMaximo() {
+		Montacargas montacarga = new Montacargas(10);
+		Carga cargaUno = new Carga(15);
+		
+		assertFalse(montacarga.cargar(cargaUno));
+		
+	}
+	
+	@Test 
 	public void queSePuedaVaciarElMontacargas() {
 		Montacargas montacarga = new Montacargas(30);
 		Carga cargaUno = new Carga(15);
