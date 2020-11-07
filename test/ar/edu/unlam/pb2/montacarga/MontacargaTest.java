@@ -10,9 +10,9 @@ public class MontacargaTest {
 	public void queSePuedaCrearUnMontacargasVacio() {
 		Montacargas montacargas = new Montacargas(20);
 		Integer cargaObtenida = montacargas.obtenerCarga();
-		Integer valorEsperado = 0;
 		
-		assertEquals(valorEsperado, cargaObtenida);
+		
+		assertEquals(0, cargaObtenida, 0);
 	}
 	
 	@Test
